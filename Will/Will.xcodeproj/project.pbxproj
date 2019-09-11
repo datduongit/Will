@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CB66FE6E5E04C71BFF84FB1C /* Pods_Will.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF75742186E8092BEE15B70A /* Pods_Will.framework */; };
+		E04427A9232909C700C44173 /* MoyaProvider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04427A8232909C700C44173 /* MoyaProvider+Rx.swift */; };
+		E04427AB23290A1400C44173 /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04427AA23290A1400C44173 /* Observable+Response.swift */; };
+		E04427AD23290A8300C44173 /* Single+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04427AC23290A8300C44173 /* Single+Response.swift */; };
 		E04AA04E231CD0EB00A03997 /* MovieNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04AA04D231CD0EB00A03997 /* MovieNetwork.swift */; };
 		E04AA052231CD19B00A03997 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04AA051231CD19B00A03997 /* Movie.swift */; };
 		E04AA054231CD20B00A03997 /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04AA053231CD20B00A03997 /* TVShow.swift */; };
@@ -33,6 +36,9 @@
 		180EC23B3D5B33BF56E52389 /* Pods-Will.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Will.debug.xcconfig"; path = "Target Support Files/Pods-Will/Pods-Will.debug.xcconfig"; sourceTree = "<group>"; };
 		2710C7F48863DF4721711524 /* Pods-Will.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Will.release.xcconfig"; path = "Target Support Files/Pods-Will/Pods-Will.release.xcconfig"; sourceTree = "<group>"; };
 		BF75742186E8092BEE15B70A /* Pods_Will.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Will.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04427A8232909C700C44173 /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
+		E04427AA23290A1400C44173 /* Observable+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Response.swift"; sourceTree = "<group>"; };
+		E04427AC23290A8300C44173 /* Single+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single+Response.swift"; sourceTree = "<group>"; };
 		E04AA04D231CD0EB00A03997 /* MovieNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNetwork.swift; sourceTree = "<group>"; };
 		E04AA051231CD19B00A03997 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E04AA053231CD20B00A03997 /* TVShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
@@ -74,7 +80,6 @@
 				180EC23B3D5B33BF56E52389 /* Pods-Will.debug.xcconfig */,
 				2710C7F48863DF4721711524 /* Pods-Will.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -215,6 +220,9 @@
 				E0507FE5231A77890056421B /* ActivityIndicator.swift */,
 				E0507FE7231A77AC0056421B /* ErrorTracker.swift */,
 				E0507FE9231A77C50056421B /* Observable+Ext.swift */,
+				E04427A8232909C700C44173 /* MoyaProvider+Rx.swift */,
+				E04427AA23290A1400C44173 /* Observable+Response.swift */,
+				E04427AC23290A8300C44173 /* Single+Response.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -349,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04427A9232909C700C44173 /* MoyaProvider+Rx.swift in Sources */,
 				E0507FEA231A77C50056421B /* Observable+Ext.swift in Sources */,
 				E0507FEE231A7A270056421B /* WillAPI.swift in Sources */,
 				E04AA054231CD20B00A03997 /* TVShow.swift in Sources */,
@@ -361,10 +370,12 @@
 				E0B29E4B231A677100189F06 /* ViewController.swift in Sources */,
 				E04AA056231CD22200A03997 /* MovieDetail.swift in Sources */,
 				E0B29E49231A677100189F06 /* AppDelegate.swift in Sources */,
+				E04427AB23290A1400C44173 /* Observable+Response.swift in Sources */,
 				E0507FE6231A77890056421B /* ActivityIndicator.swift in Sources */,
 				E04AA05C231CD2DC00A03997 /* Video.swift in Sources */,
 				E04AA052231CD19B00A03997 /* Movie.swift in Sources */,
 				E0B29E64231A693D00189F06 /* Reusable.swift in Sources */,
+				E04427AD23290A8300C44173 /* Single+Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

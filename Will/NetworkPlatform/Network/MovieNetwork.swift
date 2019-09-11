@@ -27,6 +27,7 @@ final class MovieNetwork: MovieNetworkProtocol {
     }
     
     func topRated() -> Observable<[Movie]> {
+        
         return .empty()
     }
     
