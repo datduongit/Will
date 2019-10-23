@@ -12,15 +12,20 @@ PODS:
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
+  - RxKingfisher (1.0.0):
+    - Kingfisher (~> 5)
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
   - XCDYouTubeKit (2.8.0)
 
 DEPENDENCIES:
-  - Kingfisher
+  - Kingfisher (~> 5.8.3)
   - Moya (~> 13.0)
   - RxCocoa (~> 5)
+  - RxKingfisher
   - RxSwift (~> 5)
   - XCDYouTubeKit (~> 2.8.0)
 
@@ -35,6 +40,7 @@ SPEC REPOS:
     - XCDYouTubeKit
   trunk:
     - Kingfisher
+    - RxKingfisher
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -42,10 +48,11 @@ SPEC CHECKSUMS:
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxKingfisher: 0f07678aca3e6a20143dfba67ec2d2c70d443a9a
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
   XCDYouTubeKit: 207fa50f3648fc0fd1558b2496c74c3b34af982c
 
-PODFILE CHECKSUM: 518a06e596349291b5026b2d31e66778d63629b5
+PODFILE CHECKSUM: 13027a0c3dd86910b27ba65d8216c9335c068271
 
 COCOAPODS: 1.8.4

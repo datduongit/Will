@@ -34,7 +34,11 @@ final class MoviesNavigator: MoviesNavigatorProtocol {
     }
     
     func toMoviesDetail(_ movie: Movie) {
-        
+        let navigator = MoviesDetailNavigator(navigationController: navigationController)
+        let viewModel = MovieDetailViewModel(useCase: services.makeMoviesUseCase(), navigator: navigator, movie: movie)
+        let vc = storyboard.instantiateViewController(ofType: DetailViewController.self)
+        vc.viewModelMovie = viewModel
+        navigationController.pushViewController(vc, animated: true)
     }
     
     

@@ -12,5 +12,6 @@ target 'Will' do
   pod 'Moya', '~> 13.0'
   pod 'XCDYouTubeKit', '~> 2.8.0'
   pod 'Kingfisher', '~> 5.8.3'
-
+  pod 'RxKingfisher', '~> 1.0.0'
+  
 end
