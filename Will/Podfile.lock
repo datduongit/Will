@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.8.2)
+  - Kingfisher (5.8.3):
+    - Kingfisher/Core (= 5.8.3)
+  - Kingfisher/Core (5.8.3)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
@@ -12,29 +15,37 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
+  - XCDYouTubeKit (2.8.0)
 
 DEPENDENCIES:
+  - Kingfisher
   - Moya (~> 13.0)
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
+  - XCDYouTubeKit (~> 2.8.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Moya
     - Result
     - RxCocoa
     - RxRelay
     - RxSwift
+    - XCDYouTubeKit
+  trunk:
+    - Kingfisher
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Kingfisher: b7e4cb65ff24c264bd2a1284b75b974d907afd94
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  XCDYouTubeKit: 207fa50f3648fc0fd1558b2496c74c3b34af982c
 
-PODFILE CHECKSUM: f506f792ca0cac37de449fd4ddef188d318016b7
+PODFILE CHECKSUM: 518a06e596349291b5026b2d31e66778d63629b5
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.4

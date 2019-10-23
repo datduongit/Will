@@ -67,7 +67,7 @@ extension WillApi: TargetType {
     }
     
     var task: Moya.Task {
-        return .requestParameters(parameters: ["api_key": "INSERT_API_KEY_HERE"], encoding: URLEncoding.queryString)
+        return .requestParameters(parameters: ["api_key": "223ef18552871a7cf1f730c9729fb121"], encoding: URLEncoding.queryString)
     }
     
     var headers: [String : String]? {

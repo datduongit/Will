@@ -10,5 +10,7 @@ target 'Will' do
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
   pod 'Moya', '~> 13.0'
+  pod 'XCDYouTubeKit', '~> 2.8.0'
+  pod 'Kingfisher', '~> 5.8.3'
 
 end
