@@ -16,4 +16,8 @@ final class UseCaseProvider {
         return MoviesUseCase(network: networkProvider.makeMovieNetwork())
     }
     
+    public func makeTVShowUseCase() -> TVShowUseCase {
+        return TVShowUseCase(network: networkProvider.makeTVShowNetwork())
+    }
+    
 }

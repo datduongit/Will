@@ -1,9 +1,9 @@
 //
-//  CreditsItemCollectionViewCell.swift
-//  MovieDB
+//  MoviesViewModel.swift
+//  Will
 //
-//  Created by Tarık Taha Uygun on 29.07.2019.
-//  Copyright © 2019 Tarık Taha Uygun. All rights reserved.
+//  Created by Edric D. on 9/16/19.
+//  Copyright © 2019 The Upside Down. All rights reserved.
 //
 
 import UIKit

@@ -11,6 +11,7 @@ import Moya
 
 protocol NetworkProviderProtocol {
     func makeMovieNetwork() -> MovieNetwork
+    func makeTVShowNetwork() -> TVShowNetwork
 }
 
 final class NetworkProvider: NetworkProviderProtocol {
@@ -21,5 +22,8 @@ final class NetworkProvider: NetworkProviderProtocol {
         return MovieNetwork()
     }
     
+    func makeTVShowNetwork() -> TVShowNetwork {
+        return TVShowNetwork()
+    }
     
 }

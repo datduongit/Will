@@ -1,9 +1,9 @@
 //
-//  MovieDetailViewController.swift
-//  MovieDB
+//  MoviesViewModel.swift
+//  Will
 //
-//  Created by Tarık Taha Uygun on 28.07.2019.
-//  Copyright © 2019 Tarık Taha Uygun. All rights reserved.
+//  Created by Edric D. on 9/16/19.
+//  Copyright © 2019 The Upside Down. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
 
     private let disposeBag = DisposeBag()
     internal var viewModelMovie: MovieDetailViewModel!
-//    internal var viewModelTVShow: TVShowDetailViewModel!
+    internal var viewModelTVShow: TVShowDetailViewModel!
 
     @IBOutlet weak var creditsCollectionView: UICollectionView!
 
@@ -37,7 +37,7 @@ class DetailViewController: UIViewController {
 
         registerCollectionViewCells()
         bindViewModelMovie()
-//        bindViewModelTVShow()
+        bindViewModelTVShow()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -94,48 +94,48 @@ class DetailViewController: UIViewController {
 
     }
 
-//    private func bindViewModelTVShow() {
-//        guard let viewModelTVShow = viewModelTVShow else {
-//            return
-//        }
-//        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
-//            .mapToVoid()
-//            .asDriverOnErrorJustComplete()
-//
-//        let input = TVShowDetailViewModel
-//            .Input(trigger: Driver.merge(viewWillAppear),
-//                   backButtonTrigger: backButton.rx.tap.asDriver(),
-//                   shareButtonTrigger: shareButton.rx.tap.asDriver(),
-//                   playButtonTrigger: playButton.rx.tap.asDriver())
-//
-//        let output = viewModelTVShow.transform(input: input)
-//
-//        [output.tvShowDetail.drive(tvShowDetailBinding),
-//         output.error.drive(errorBinding)]
-//            .forEach {
-//                $0.disposed(by: disposeBag)
-//        }
-//
-//        output.credits.drive(
-//            creditsCollectionView
-//                .rx.items(cellIdentifier: CreditsItemCollectionViewCell.reuseID,
-//                          cellType: CreditsItemCollectionViewCell.self)) {_, viewModel, cell in
-//                            cell.bind(viewModel)
-//            }.disposed(by: disposeBag)
-//
-//        output.dismiss.drive()
-//            .disposed(by: disposeBag)
-//
-//        output.shareAction.drive()
-//            .disposed(by: disposeBag)
-//
-//        output.playAction.drive()
-//            .disposed(by: disposeBag)
-//
-//        output.credits.drive()
-//            .disposed(by: disposeBag)
-//
-//    }
+    private func bindViewModelTVShow() {
+        guard let viewModelTVShow = viewModelTVShow else {
+            return
+        }
+        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
+            .mapToVoid()
+            .asDriverOnErrorJustComplete()
+
+        let input = TVShowDetailViewModel
+            .Input(trigger: Driver.merge(viewWillAppear),
+                   backButtonTrigger: backButton.rx.tap.asDriver(),
+                   shareButtonTrigger: shareButton.rx.tap.asDriver(),
+                   playButtonTrigger: playButton.rx.tap.asDriver())
+
+        let output = viewModelTVShow.transform(input: input)
+
+        [output.tvShowDetail.drive(tvShowDetailBinding),
+         output.error.drive(errorBinding)]
+            .forEach {
+                $0.disposed(by: disposeBag)
+        }
+
+        output.credits.drive(
+            creditsCollectionView
+                .rx.items(cellIdentifier: CreditsItemCollectionViewCell.reuseID,
+                          cellType: CreditsItemCollectionViewCell.self)) {_, viewModel, cell in
+                            cell.bind(viewModel)
+            }.disposed(by: disposeBag)
+
+        output.dismiss.drive()
+            .disposed(by: disposeBag)
+
+        output.shareAction.drive()
+            .disposed(by: disposeBag)
+
+        output.playAction.drive()
+            .disposed(by: disposeBag)
+
+        output.credits.drive()
+            .disposed(by: disposeBag)
+
+    }
 
     private var movieDetailBinding: Binder<MovieDetailItemViewModel> {
         return Binder(self, binding: { (vc, viewModel) in
@@ -149,17 +149,17 @@ class DetailViewController: UIViewController {
         })
     }
 
-//    private var tvShowDetailBinding: Binder<TVShowDetailItemViewModel> {
-//        return Binder(self, binding: { (vc, viewModel) in
-//            vc.titleLabel.text = viewModel.title
-//            vc.voteLabel.text = viewModel.vote
-//            vc.backdropImage.kf.setImage(with: viewModel.backdropURL, placeholder: UIImage(named: "backdropImage"))
-//            vc.posterImage.imageView.kf.setImage(with: viewModel.posterURL, placeholder: UIImage(named: "posterImage"))
-//            vc.overviewLabel.text = viewModel.overview
-//            vc.genresLabel.text = viewModel.genres
-//            vc.popularityLabel.text = viewModel.popularity
-//        })
-//    }
+    private var tvShowDetailBinding: Binder<TVShowDetailItemViewModel> {
+        return Binder(self, binding: { (vc, viewModel) in
+            vc.titleLabel.text = viewModel.title
+            vc.voteLabel.text = viewModel.vote
+            vc.backdropImage.kf.setImage(with: viewModel.backdropURL, placeholder: UIImage(named: "backdropImage"))
+            vc.posterImage.imageView.kf.setImage(with: viewModel.posterURL, placeholder: UIImage(named: "posterImage"))
+            vc.overviewLabel.text = viewModel.overview
+            vc.genresLabel.text = viewModel.genres
+            vc.popularityLabel.text = viewModel.popularity
+        })
+    }
 
     private var errorBinding: Binder<Error> {
         return Binder(self, binding: { vc, _ in

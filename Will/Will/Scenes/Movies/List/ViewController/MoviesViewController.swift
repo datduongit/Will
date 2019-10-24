@@ -76,9 +76,11 @@ class MoviesViewController: UIViewController {
         output.selectedTopRated
             .drive()
             .disposed(by: disposeBag)
+        
         output.selectedNowPlaying
             .drive()
             .disposed(by: disposeBag)
+        
         output.selectedPopular
             .drive()
             .disposed(by: disposeBag)

@@ -1,9 +1,9 @@
 //
-//  MovieItemCollectionViewCell.swift
-//  MovieDB
+//  MoviesViewModel.swift
+//  Will
 //
-//  Created by Tarık Taha Uygun on 28.07.2019.
-//  Copyright © 2019 Tarık Taha Uygun. All rights reserved.
+//  Created by Edric D. on 9/16/19.
+//  Copyright © 2019 The Upside Down. All rights reserved.
 //
 
 import UIKit
@@ -33,10 +33,10 @@ class PosterItemCollectionViewCell: UICollectionViewCell {
         }
     }
 
-//    func bindTVShow(_ viewModel: TVShowItemViewModel) {
-//        titleLabel.text = viewModel.title?.uppercased()
-//        posterImage.imageView.kf.setImage(with: viewModel.posterURL)
-//        voteLabel.isHidden = true
-//        voteImage.isHidden = true
-//    }
+    func bindTVShow(_ viewModel: TVShowItemViewModel) {
+        titleLabel.text = viewModel.title?.uppercased()
+        posterImage.imageView.kf.setImage(with: viewModel.posterURL)
+        voteLabel.isHidden = true
+        voteImage.isHidden = true
+    }
 }

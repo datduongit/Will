@@ -1,48 +1,46 @@
 //
-//  MoviesViewModel.swift
+//  TVShowDetailItemViewModel.swift
 //  Will
 //
-//  Created by Edric D. on 9/16/19.
+//  Created by Edric D. on 10/24/19.
 //  Copyright © 2019 The Upside Down. All rights reserved.
 //
 
 import Foundation
 
-final class MovieDetailItemViewModel {
+final class TVShowDetailItemViewModel {
     let title: String
     let overview: String
-    let homepage: String
-    let movieDetail: MovieDetail
+    let homePage: String
+    let tvShowDetail: TVShowDetail
     var genres: String = ""
     var popularity: String = ""
     let vote: String
     var backdropURL: URL?
     var posterURL: URL?
-
-    init(with movieDetail: MovieDetail) {
-        self.movieDetail = movieDetail
-        if let genres = movieDetail.genres {
+    
+    init(with tvShowDetail: TVShowDetail) {
+        self.tvShowDetail = tvShowDetail
+        if let genres = tvShowDetail.genres {
             let genresString = genres.map {
-                 "\($0.name ?? "")"
+                "\($0.name ?? "")"
             }
             self.genres = genresString.joined(separator: " , ")
         }
-        if let popularity = movieDetail.popularity {
+        if let popularity = tvShowDetail.popularity {
             self.popularity = "\(popularity) People watching"
         }
-        self.title = movieDetail.title?.uppercased() ?? ""
-        self.overview = movieDetail.overview ?? ""
-        self.homepage = movieDetail.homepage ?? ""
-        self.vote = movieDetail.voteAverage?.description ?? ""
-        if let backdropURL = movieDetail.backdropPath {
+        self.title = tvShowDetail.name?.uppercased() ?? ""
+        self.overview = tvShowDetail.overview ?? ""
+        self.homePage = tvShowDetail.homepage ?? ""
+        self.vote = tvShowDetail.voteAverage?.description ?? ""
+        if let backdropURL = tvShowDetail.backdropPath {
             let imageURLBuilder = ImageURLBuilder(imageURLType: .original, path: backdropURL)
             self.backdropURL = imageURLBuilder.url
         }
-        if let posterPath = movieDetail.posterPath {
+        if let posterPath = tvShowDetail.posterPath {
             let imageURLBuilder = ImageURLBuilder(imageURLType: .original, path: posterPath)
             self.posterURL = imageURLBuilder.url
         }
     }
 }
-
-

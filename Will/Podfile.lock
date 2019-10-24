@@ -25,7 +25,7 @@ DEPENDENCIES:
   - Kingfisher (~> 5.8.3)
   - Moya (~> 13.0)
   - RxCocoa (~> 5)
-  - RxKingfisher
+  - RxKingfisher (~> 1.0.0)
   - RxSwift (~> 5)
   - XCDYouTubeKit (~> 2.8.0)
 
@@ -53,6 +53,6 @@ SPEC CHECKSUMS:
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
   XCDYouTubeKit: 207fa50f3648fc0fd1558b2496c74c3b34af982c
 
-PODFILE CHECKSUM: 13027a0c3dd86910b27ba65d8216c9335c068271
+PODFILE CHECKSUM: 033a8b488ce1181b5eb3ffa553dd8e1963f8d12f
 
 COCOAPODS: 1.8.4
