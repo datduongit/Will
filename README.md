@@ -33,18 +33,15 @@
 
 ## App Features
 - [x] Basic and OAuth2 authentication (Todo implement)
-- [x] View trending repositories and users ([github-trending-api](https://github.com/huchenme/github-trending-api)) ((Todo implement))
 - [x] Quickly browse the history of a file from any git repository ([git-history](https://github.com/pomber/git-history))
 - [x] Tool for visualizing GitHub profiles ([profile-summary-for-github](https://github.com/tipsy/profile-summary-for-github))
-- [x] Source file viewer and syntax highlighting ([Highlightr](https://github.com/raspu/Highlightr))
 
 ## Technologies
 - [x] Clean architecture ([RxSwift](https://github.com/ReactiveX/RxSwift) and MVVM)
 - [x] Flow coordinators ([Realm demo](https://github.com/realm/EventKit/blob/master/iOS/EventBlank2-iOS/Services/Navigator.swift))
 - [x] REST API v3 (for unauthenticated or basic authentication) ([Moya](https://github.com/Moya/Moya), [ObjectMapper](https://github.com/tristanhimmelman/ObjectMapper))
-- [x] Custom transition animations ([Hero](https://github.com/HeroTransitions/Hero))
 - [x] Logging ([CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack))
-- [ ] Dependency injection ([Swinject](https://github.com/Swinject/Swinject))
+- [ ] Dependency injection ([Swinject](https://github.com/Swinject/Swinject))(Todo implement)
 
 ## Tools
 - [x] [Fastlane](https://github.com/fastlane/fastlane) - The easiest way to automate building and releasing your iOS and Android apps
