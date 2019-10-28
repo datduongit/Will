@@ -32,45 +32,22 @@
 <img alt="03" src="https://github.com/datduongit/Will/blob/master/screenshots/3.png?raw=true" width="280">&nbsp;
 
 ## App Features
-- [x] Basic and OAuth2 authentication
-- [x] View trending repositories and users ([github-trending-api](https://github.com/huchenme/github-trending-api))
-- [x] Advanced searching and sorting repositories and users, filter by language
-- [x] View repository and user details, events, issues, commits, pull requests, contributors, etc...
-- [x] View issue and pull request messages ([MessageKit](https://github.com/MessageKit/MessageKit))
-- [x] The missing star history graph of github repos ([stars-history](https://github.com/timqian/star-history))
+- [x] Basic and OAuth2 authentication (Todo implement)
+- [x] View trending repositories and users ([github-trending-api](https://github.com/huchenme/github-trending-api)) ((Todo implement))
 - [x] Quickly browse the history of a file from any git repository ([git-history](https://github.com/pomber/git-history))
 - [x] Tool for visualizing GitHub profiles ([profile-summary-for-github](https://github.com/tipsy/profile-summary-for-github))
 - [x] Source file viewer and syntax highlighting ([Highlightr](https://github.com/raspu/Highlightr))
-- [x] Color themes in light and dark modes ([RxTheme](https://github.com/RxSwiftCommunity/RxTheme))
-- [x] In-app language switching (en, zh, ru, hy) ([Localize-Swift](https://github.com/marmelroy/Localize-Swift))
-- [x] Whats New functionality ([WhatsNewKit](https://github.com/SvenTiigi/WhatsNewKit))
-- [x] Invite friends functionality
-- [x] Support iPhone and iPad (Split View)
-- [ ] Clone repository directly to app ([SwiftGit2](https://github.com/SwiftGit2/SwiftGit2))
 
 ## Technologies
 - [x] Clean architecture ([RxSwift](https://github.com/ReactiveX/RxSwift) and MVVM)
 - [x] Flow coordinators ([Realm demo](https://github.com/realm/EventKit/blob/master/iOS/EventBlank2-iOS/Services/Navigator.swift))
 - [x] REST API v3 (for unauthenticated or basic authentication) ([Moya](https://github.com/Moya/Moya), [ObjectMapper](https://github.com/tristanhimmelman/ObjectMapper))
-- [x] GraphQL API v4 (for OAuth2 authentication) ([Apollo](https://github.com/apollographql/apollo-ios))
 - [x] Custom transition animations ([Hero](https://github.com/HeroTransitions/Hero))
-- [x] Programmatically UI ([SnapKit](https://github.com/SnapKit/SnapKit))
-- [x] Mixpanel and Firebase analytics events ([Umbrella](https://github.com/devxoul/Umbrella))
-- [x] Crash reporting ([Crashlytics](https://fabric.io/kits/ios/crashlytics))
 - [x] Logging ([CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack))
-- [x] Google ads implementation, can be enabled/disabled from settings ([Firebase AdMob](https://firebase.google.com/docs/admob/ios/quick-start))
-- [ ] Migrate to Apple's new [SwiftUI](https://developer.apple.com/xcode/swiftui/) and [Combine](https://developer.apple.com/documentation/combine)
 - [ ] Dependency injection ([Swinject](https://github.com/Swinject/Swinject))
-- [ ] Add tests
 
 ## Tools
-- [x] [Brew](https://github.com/Homebrew/brew) - The missing package manager for macOS
-- [x] [Bundler](https://github.com/bundler/bundler) - Manage your Ruby application's gem dependencies
 - [x] [Fastlane](https://github.com/fastlane/fastlane) - The easiest way to automate building and releasing your iOS and Android apps
-- [x] [SwiftLint](https://github.com/realm/SwiftLint) - A tool to enforce Swift style and conventions
-- [x] [JSONExport](https://github.com/Ahmed-Ali/JSONExport) - Is a desktop application which enables you to export JSON objects as model classes
-- [x] [R.swift](https://github.com/mac-cain13/R.swift) - Get strong typed, autocompleted resources like images, fonts and segues in Swift projects
-- [x] [Flex](https://github.com/Flipboard/FLEX) - An in-app debugging and exploration tool for iOS
 - [x] [Sourcetree](https://www.sourcetreeapp.com) - A free Git client for Windows and Mac
 
 ## Building and Running
@@ -85,39 +62,30 @@ pod install
 Alrighty! We're ready to go!
 
 ## Documentation
-You can generate the API docs locally. Run `jazzy` from the root of this repository. This requires installation of [jazzy](https://github.com/realm/jazzy/). You will find the output in `docs/`. You can set options for your project’s documentation in a configuration file, [.jazzy.yaml](https://github.com/khoren93/SwiftHub/blob/master/.jazzy.yaml) by default.
+You must get a API Key (v3 Auth) from https://developers.themoviedb.org/ and update the INSERT_API_KEY_HERE in the NetworkPlatform/API/WillApi.swift
 
 ## Debugging
-[Flex](https://github.com/Flipboard/FLEX) debugging tool has been integrated in this application. To enable it, just swipe right anywhere in the application.
-There are also included debugging [Hero](https://github.com/HeroTransitions/Hero) animations. To use it, swipe right with two fingers. Repeat this to disable.
+Tobe define...
 
 ## Fastlane
-
-[Fastlane](https://fastlane.tools) automates common development tasks - for example bumping version numbers, running tests on multiple configurations, or submitting to the App Store. You can list the available lanes (our project-specific scripts) using `bundle exec fastlane lanes`. You can list available actions (all actions available to be scripted via lanes) using `bundle exec fastlane actions`. The fastlane configuration and scripts are in the `fastlane` folder.
+Tobe implement...
 
 ## Design
 Tobe define...
 
 ## SwiftHub In
 * [open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps#github) - Collaborative List of Open-Source iOS Apps
-* [fantastic-ios-architecture](https://github.com/onmyway133/fantastic-ios-architecture#repos-7) - Better ways to structure iOS apps
 * [Moya](https://github.com/Moya/Moya/blob/master/docs/CommunityProjects.md#Applications) - Community Projects
-* [MessageKit](https://github.com/MessageKit/MessageKit#apps-using-this-library) - Apps using this library
-* [github-trending-api](https://github.com/huchenme/github-trending-api#projects-using-github-trending-api) - Projects using this library
 * [awesome-rxswift](https://github.com/LeoMobileDeveloper/awesome-rxswift#open-source-apps) - Curated list of RxSwift library and learning material
+* [Kingfisher](https://github.com/onevcat/Kingfisher) A lightweight, pure-Swift library for downloading and caching images from the web.
+* [XCDYouTubeKit](https://github.com/0xced/XCDYouTubeKit) YouTube video player for iOS, tvOS and macOS
 
 ## References
 * [CleanArchitectureRxSwift](https://github.com/sergdort/CleanArchitectureRxSwift) - Clean architecture with RxSwift
 * [View Model in RxSwift](https://medium.com/@SergDort/viewmodel-in-rxswift-world-13d39faa2cf5) - Good article
 
 ## See Also
-* [GitHawk](https://github.com/GitHawkApp/GitHawk) - The best iOS app for GitHub
-* [CodeHub](https://github.com/CodeHubApp/CodeHub) - An iOS application written using Xamarin
-* [GitPoint](https://github.com/gitpoint/git-point) - GitHub in your pocket
-* [DevHub](https://github.com/devhubapp/devhub) - TweetDeck for GitHub - Android, iOS, Web & Desktop
-* [OpenHub](https://github.com/ThirtyDegreesRay/OpenHub) - An open source GitHub Android client app, faster and concise
-* [Trailer](https://github.com/ptsochantaris/trailer) - Managing Pull Requests and Issues For GitHub & GitHub Enterprise
-* [FastHub](https://github.com/k0shk0sh/FastHub) - FastHub the ultimate GitHub client for Android.
+* [SwiftHub](https://github.com/khoren93/SwiftHub/tree/master/SwiftHub) - GitHub iOS client in RxSwift and MVVM-C clean architecture
 
 ## License
 MIT License. See [LICENSE](https://github.com/).
