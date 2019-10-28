@@ -30,7 +30,6 @@
 <img alt="01" src="https://github.com/datduongit/Will/blob/master/screenshots/1.png?raw=true" width="280">&nbsp;
 <img alt="02" src="https://github.com/datduongit/Will/blob/master/screenshots/2.png?raw=true" width="280">&nbsp;
 <img alt="03" src="https://github.com/datduongit/Will/blob/master/screenshots/3.png?raw=true" width="280">&nbsp;
-<img alt="04" src="https://github.com/datduongit/Will/blob/master/screenshots/4.png?raw=true" width="280">&nbsp;
 
 ## App Features
 - [x] Basic and OAuth2 authentication
@@ -69,14 +68,10 @@
 - [x] [Bundler](https://github.com/bundler/bundler) - Manage your Ruby application's gem dependencies
 - [x] [Fastlane](https://github.com/fastlane/fastlane) - The easiest way to automate building and releasing your iOS and Android apps
 - [x] [SwiftLint](https://github.com/realm/SwiftLint) - A tool to enforce Swift style and conventions
-- [x] [Jazzy](https://github.com/realm/jazzy) - Soulful docs for Swift & Objective-C
 - [x] [JSONExport](https://github.com/Ahmed-Ali/JSONExport) - Is a desktop application which enables you to export JSON objects as model classes
 - [x] [R.swift](https://github.com/mac-cain13/R.swift) - Get strong typed, autocompleted resources like images, fonts and segues in Swift projects
 - [x] [Flex](https://github.com/Flipboard/FLEX) - An in-app debugging and exploration tool for iOS
 - [x] [Sourcetree](https://www.sourcetreeapp.com) - A free Git client for Windows and Mac
-- [x] [Postman](https://www.getpostman.com) - A powerful HTTP client for testing web services ([view](https://github.com/khoren93/SwiftHub/tree/master/Postman))
-- [x] [Sketch](https://www.sketchapp.com) - A digital design app for Mac (paid) ([view](https://github.com/khoren93/SwiftHub/tree/master/Sketch))
-- [x] [iThoughtsX](https://www.toketaware.com) - A mind mapping app for Windows, Mac, iPad and iPhone (paid) ([view](https://github.com/khoren93/SwiftHub/tree/master/iThoughtsX))
 
 ## Building and Running
 
@@ -101,8 +96,7 @@ There are also included debugging [Hero](https://github.com/HeroTransitions/Hero
 [Fastlane](https://fastlane.tools) automates common development tasks - for example bumping version numbers, running tests on multiple configurations, or submitting to the App Store. You can list the available lanes (our project-specific scripts) using `bundle exec fastlane lanes`. You can list available actions (all actions available to be scripted via lanes) using `bundle exec fastlane actions`. The fastlane configuration and scripts are in the `fastlane` folder.
 
 ## Design
-All icons used in the application are taken from the [Feather](https://github.com/feathericons/feather).
-Thanks to them for the beautiful open source icons.
+Tobe define...
 
 ## SwiftHub In
 * [open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps#github) - Collaborative List of Open-Source iOS Apps
@@ -111,7 +105,6 @@ Thanks to them for the beautiful open source icons.
 * [MessageKit](https://github.com/MessageKit/MessageKit#apps-using-this-library) - Apps using this library
 * [github-trending-api](https://github.com/huchenme/github-trending-api#projects-using-github-trending-api) - Projects using this library
 * [awesome-rxswift](https://github.com/LeoMobileDeveloper/awesome-rxswift#open-source-apps) - Curated list of RxSwift library and learning material
-* [Medium-Mybridge](https://medium.mybridge.co/swift-open-source-for-the-past-month-v-may-2019-c0f6a0d61e34) - Swift Open Source for the Past Month (v.May 2019)
 
 ## References
 * [CleanArchitectureRxSwift](https://github.com/sergdort/CleanArchitectureRxSwift) - Clean architecture with RxSwift
