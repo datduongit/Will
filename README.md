@@ -59,7 +59,7 @@ pod install
 Alrighty! We're ready to go!
 
 ## Documentation
-You must get a API Key (v3 Auth) from https://developers.themoviedb.org/ and update the INSERT_API_KEY_HERE in the NetworkPlatform/API/WillApi.swift
+You must get a API Key (v3 Auth) from https://developers.themoviedb.org/ and update the `INSERT_API_KEY_HERE` in the NetworkPlatform/API/WillApi.swift
 
 ## Debugging
 Tobe define...
