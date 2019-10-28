@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/khoren93/SwiftHub/blob/master/Sketch/app_logo.svg" alt="SwiftHub logo" height="80" >
+  <img src="https://github.com/datduongit/Will/blob/master/Logo/will.png" height="80" >
 </p>
 
 <p align="center">
