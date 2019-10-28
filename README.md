@@ -12,7 +12,6 @@
 
 ## Content
 - [Screenshots](#screenshots)
-- [Mind Mapping](#mind-mapping-full-version)
 - [App Features](#app-features)
 - [Technologies](#technologies)
 - [Tools](#tools)
@@ -28,20 +27,10 @@
 
 ## Screenshots
 
-<img alt="04_trending_repository_screen" src="https://github.com/khoren93/SwiftHub/blob/master/screenshots/04_trending_repository_screen.png?raw=true" width="280">&nbsp;
-<img alt="01_search_repository_screen" src="https://github.com/khoren93/SwiftHub/blob/master/screenshots/01_search_repository_screen.png?raw=true" width="280">&nbsp;
-<img alt="02_repository_details_screen" src="https://github.com/khoren93/SwiftHub/blob/master/screenshots/02_repository_details_screen.png?raw=true" width="280">&nbsp;
-
-<img alt="05_search_user_screen" src="https://github.com/khoren93/SwiftHub/blob/master/screenshots/05_search_user_screen.png?raw=true" width="280">&nbsp;
-<img alt="06_user_details_screen" src="https://github.com/khoren93/SwiftHub/blob/master/screenshots/06_user_details_screen.png?raw=true" width="280">&nbsp;
-<img alt="03_settings_screen" src="https://github.com/khoren93/SwiftHub/blob/master/screenshots/03_settings_screen.png?raw=true" width="280">&nbsp;
-
-## Mind Mapping ([full version](https://github.com/khoren93/SwiftHub/blob/master/iThoughtsX/SwiftHub_full.pdf))
-<p align="center">
-  <a href="https://github.com/khoren93/SwiftHub/blob/master/iThoughtsX/SwiftHub_full.pdf">
-    <img alt="SwiftHub mind note" src="https://github.com/khoren93/SwiftHub/blob/master/iThoughtsX/SwiftHub.png?raw=true" height="250">
-  </a>
-</p>
+<img alt="01" src="https://github.com/datduongit/Will/blob/master/screenshots/1.png?raw=true" width="280">&nbsp;
+<img alt="02" src="https://github.com/datduongit/Will/blob/master/screenshots/2.png?raw=true" width="280">&nbsp;
+<img alt="03" src="https://github.com/datduongit/Will/blob/master/screenshots/3.png?raw=true" width="280">&nbsp;
+<img alt="04" src="https://github.com/datduongit/Will/blob/master/screenshots/4.png?raw=true" width="280">&nbsp;
 
 ## App Features
 - [x] Basic and OAuth2 authentication
@@ -92,39 +81,12 @@
 ## Building and Running
 
 You'll need a few things before we get started. 
-Make sure you have Xcode installed from the App Store. 
-Then run the following command to install Xcode's command line tools, if you don't have that yet
-```sh
-xcode-select --install
-```
-
-Install [`Bundler`](https://bundler.io) for managing Ruby gem dependencies
-```sh
-[sudo] gem install bundler
-```
-
-Install [Brew](https://github.com/Homebrew/brew) package manager for macOS
-```sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-Install [`Node`](https://nodejs.org/en/) (required to install [Apollo](https://github.com/apollographql/apollo-ios))
-```sh
-brew install node
-```
-
+Make sure you have Xcode installed from the App Store.
 The following commands will set up Will
 ```sh
 cd Will
-bundle install
-bundle exec fastlane setup
+pod install
 ```
-
-To update all tools and pods
-```sh
-bundle exec fastlane update
-```
-
 Alrighty! We're ready to go!
 
 ## Documentation
